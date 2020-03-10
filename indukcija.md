@@ -117,19 +117,35 @@ Dokaz
 	obrni' []
 
 	Korak:
-	i.p. je obrni xs = obrni' xs
+	i.p. je obrni xs = obrni' xs = aux [] xs
 
 	obrni' (x :: xs) =
 	aux [] (x :: xs) =
 	aux (x :: []) xs =
-	aux [x] xs = (?)
-	aux [obrni xs @ [x]] [] =
+	aux [x] xs = 
+
+		(*)
+
+	aux (obrni xs @ [x]) [] =
 	obrni xs @ [x] =
 	obrni (x :: xs)
 
-	(	
-		obrni (x :: xs) =
-		obrni xs @ [x] =
-		obrni' xs @ [x] =
-		(aux [] xs) @ [x] =
-	)
+	pomožni dokazek
+
+		aux acc xs = aux ((obrni xs) @ acc) []
+		- - - - - - - - - - - - - - - - - - - 
+
+		za xs = [] je to baza, ki očinto velja
+
+		Korak:
+
+		aux acc (x :: xs) =
+		aux (x :: acc) xs = i.p.
+		aux ((obrni xs) @ (x :: acc)) [] = 
+		(obrni xs) @ (x :: acc) =
+		(obrni xs) @ ([x] @ acc) =
+		(obrni xs @ [x]) @ acc =
+		(obrni (x :: xs)) @ acc =
+		aux ((obrni (x :: xs)) @ acc) []
+
+		(*) tu vzamemo acc = [x] v podčrtkani enakosti.
