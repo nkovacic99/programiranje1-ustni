@@ -37,7 +37,7 @@ Dokaz:
 	1 + dolzina (xs' @ ys) = i.p.
 	1 + dolzina xs' + dolzina ys =
 	dolzina (x :: xs') + dolzina ys.
-													qed
+																				qed
 
 ## xs @ (ys @ zs) = (xs @ ys) @ zs
 
@@ -56,7 +56,7 @@ Dokaz:
 	x :: ((xs @ ys) @ zs) =
 	(x :: (xs @ ys)) @ zs = (po def @)
 	((x :: xs) @ ys) @ zs (se enkrat po def @)
-												qed
+																				qed
 
 ## obrni (xs @ ys) = obrni ys @ obrni xs
 
@@ -76,6 +76,7 @@ Dokaz:
 	(obrni ys @ obrni xs) @ [x] =
 	obrni ys @ (obrni xs @ [x]) = (po def obrni)
 	obrni ys @ obrni (x :: xs)
+																				qed
 
 ## obrni (obrni xs) = xs
   
@@ -91,6 +92,7 @@ Dokaz:
 	obrni (obrni xs @ [x]) =
 	obrni [x] @ obrni (obrni xs) = i.p. + se par vrstic
 	x :: xs
+																				qed
 
 ```ocaml
 let obrni' =
