@@ -18,9 +18,9 @@ let rec dolzina = function
 ```
 
 
-+ dolzina (xs @ ys) = dolzina xs + dolzina ys
+## dolzina (xs @ ys) = dolzina xs + dolzina ys
 
-Dokaz
+Dokaz:
 	
 	Baza:
 
@@ -39,9 +39,9 @@ Dokaz
 	dolzina (x :: xs') + dolzina ys.
 													qed
 
-+ xs @ (ys @ zs) = (xs @ ys) @ zs
+## xs @ (ys @ zs) = (xs @ ys) @ zs
 
-Dokaz
+Dokaz:
 
 	Baza:
 	[] @ (ys @ zs) =
@@ -58,9 +58,9 @@ Dokaz
 	((x :: xs) @ ys) @ zs (se enkrat po def @)
 												qed
 
-+ obrni (xs @ ys) = obrni ys @ obrni xs
+## obrni (xs @ ys) = obrni ys @ obrni xs
 
-Dokaz
+Dokaz:
 
 	Baza:
 	obrni ([] @ ys) =
@@ -77,9 +77,9 @@ Dokaz
 	obrni ys @ (obrni xs @ [x]) = (po def obrni)
 	obrni ys @ obrni (x :: xs)
 
-+ obrni (obrni xs) = xs
+## obrni (obrni xs) = xs
   
-Dokaz
+Dokaz:
 
 	Baza:
 	obrni (obrni []) =
@@ -106,9 +106,9 @@ let rec obrni = function
   | x :: xs -> obrni xs @ [x]
 ```
 
-+ obrni xs = obrni' xs
+## obrni xs = obrni' xs
 
-Dokaz
+Dokaz:
 
 	Baza:
 	obrni [] =
@@ -130,7 +130,7 @@ Dokaz
 	obrni xs @ [x] =
 	obrni (x :: xs)
 
-	pomožni dokazek
+	pomožni dokazek:
 
 		aux acc xs = aux ((obrni xs) @ acc) []
 		- - - - - - - - - - - - - - - - - - - 
@@ -149,3 +149,4 @@ Dokaz
 		aux ((obrni (x :: xs)) @ acc) []
 
 		(*) tu vzamemo acc = [x] v podčrtkani enakosti.
+																				qed
