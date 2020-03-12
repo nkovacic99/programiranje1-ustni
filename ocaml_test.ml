@@ -135,4 +135,4 @@ and 'a node = { left: 'a tree; value: 'a; right: 'a tree }
 
 type 'a list_ = 
   | Nil
-  | Cons of 'a * 'a list
+  | Cons of 'a * 'a list_
