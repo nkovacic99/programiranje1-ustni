@@ -1,0 +1,40 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Python",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "python -i \\\"${file}\\\""
+                },
+            "linux": {
+                "command": "python -i \"${file}\""
+            },
+            "osx": {
+                "command": "python3 -i \"${file}\""
+            }
+        },
+        {
+            "label": "OCaml",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "ocaml -init \\\"${file}\\\""
+                },
+            "linux": {
+                "command": "rlwrap ocaml -init \"${file}\""
+            },
+            "osx": {
+                "command": "rlwrap ocaml -init \"${file}\""
+            }
+        }
+    ]
+}
