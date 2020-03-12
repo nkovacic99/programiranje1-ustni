@@ -79,3 +79,60 @@ let selection_sort tabela =
     done;
     zamenjaj tabela m.(0) k
   done
+
+(* funkcije fold ... *)
+
+let zlozi_levo f z xs =
+  let rec aux acc = function 
+    | [] -> acc
+    | x :: xs' -> aux (f acc x) xs'
+  in
+  aux z xs 
+
+let rec zlozi_levo_no_acc f z xs = match xs with
+  | [] -> z
+  | x :: xs' -> zlozi_levo_no_acc f (f z x) xs' 
+
+let rec zlozi_desno f xs z = match xs with
+  | [] -> z
+  | x :: xs' -> f x (zlozi_desno f xs' z) 
+
+(* primeri *)
+
+let rec dolzina = function
+  | [] -> 0
+  | x :: xs -> 1 + dolzina xs
+
+let dolzina_w_fold xs = zlozi_desno (fun _ -> (fun y -> y + 1)) xs 0 
+(*                    = zlozi_desno (fun _ acc -> 1 + acc) xs 0
+*)
+
+let vsota_w_fold xs = zlozi_desno (+) xs 0
+let produkt_w_fold xs = zlozi_desno ( * ) xs 1
+let map_w_fold g xs = zlozi_desno (fun y -> (fun ys -> g y :: ys)) xs []  
+(*                  = zlozi_desno (fun y ys -> g y :: ys) xs []
+*)
+
+(* vsote *)
+
+type geometrijski_objekti =
+  | Tocka
+  | Krog of float
+  | Pravokotnik of (float * float)
+
+let povrsina (objekt : geometrijski_objekti) =
+  match objekt with
+  | Tocka -> 0.
+  | Krog r -> 3.14 *. r *. r
+  | Pravokotnik (a, b) -> a *. b 
+
+let moji = [Tocka; Pravokotnik (3., 4.)]
+
+type 'a tree = 
+  | Empty
+  | Node of 'a node
+and 'a node = { left: 'a tree; value: 'a; right: 'a tree }
+
+type 'a list_ = 
+  | Nil
+  | Cons of 'a * 'a list
