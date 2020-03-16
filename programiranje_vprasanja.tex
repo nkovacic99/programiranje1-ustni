@@ -1,4 +1,5 @@
 \documentclass[a4paper]{article}
+\usepackage{graphicx}
 
 \begin{document}
 \section*{Vprašanja za ustni izpit pri Programiranju I}
@@ -54,10 +55,44 @@ Python repnih klicev namenoma ne optimizira. \footnote{PRI OBEH NAPIŠI PREDNOST
 
 \subsubsection*{Parametrični tipi in polimorfne funkcije}
 \subsubsection*{Funkcije višjega reda in anonimne funkcije}
-Anonimne funkcije so funkcije, ki jih \textit{ne poimenujemo}. V OCamlu jih zapišemo kar kot \textit{fun x $\rightarrow$ fun(x)}. Uporabne so predvsem zato, da jih uporabimo zgolj enkrat in na seznamu.
+Anonimne funkcije so funkcije, ki jih \textit{ne poimenujemo}. V OCamlu jih zapišemo kar kot \textit{fun x $\rightarrow$ fun(x)}. Uporabne so predvsem kadar jih uporabimo zgolj enkrat in na seznamu.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=100mm]{slike/anonimna_funkcija.png}
+    \label{fig:anonimna funkcija}
+\end{figure} \\
+
+Funkcije nam ob dani spremenljivki vrnejo določene vrednosti. Če te vrednosti uporabimo naprej v drugi funkciji, govorimo o \textit{funkcijah višjega reda}. Torej funkcija višjega reda je vsaka 
+funkcija, ki kot argument uporabi neko drugo funkcijo v določeni spremenljivki.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=100mm]{slike/funkcija_visjega_reda.png}
+    \label{fig:funkcija visjega reda}
+\end{figure} \\
+
+V OCamlu je navada, da pišemo \textit{fun x $\rightarrow$ fun(x)}. Operator $\rightarrow$ v tem zapisu je desno asociativen.
 \subsubsection*{Delno uporabljene funkcije in curryiranje}
 \subsubsection*{Vsote in induktivni tipi}
 \subsubsection*{Različice funkcije \textit{fold}}
+Funkcije \textit{fold} so funkcije višjega reda. Gre za družino funkcij, ki "nabirajo" vrednosti elementov
+po vrsti. Primer funkcije, ki sodi v družino \textit{fold}, je funkcija max. \footnote{NAPIŠI KAKO DELUJE} \\
+
+\texttt{fold\_right}
+\begin{itemize}
+    \item vrstni red združevanja elementov je desno $\rightarrow$ levo
+    \item ni repno rekurzivna
+\end{itemize}
+\texttt{fold\_left}
+\begin{itemize}
+    \item vrstni red združevanja elementov je levo $\rightarrow$ desno
+    \item repno rekurzivna
+\end{itemize} 
+Tipa funkcij sta različna.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=100mm]{slike/fold_funkciji.png}
+    \label{fig: fold_funkciji}
+\end{figure}
 \subsubsection*{Dokazovanje z indukcijo na seznamih in drevesih}
 \subsubsection*{Signature in moduli}
 \subsection*{Iztočnice za podatkovne strukture in algoritme}
