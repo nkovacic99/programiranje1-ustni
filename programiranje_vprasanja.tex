@@ -4,10 +4,57 @@
 \section*{Vprašanja za ustni izpit pri Programiranju I}
 \subsection*{Iztočnice za funkcijsko programiranje}
 \subsubsection*{Najpogostejši tipi v OCamlu}
+okrajšave tipov
+\begin{itemize}
+    \item int
+    \item float
+    \item string
+    \item unit
+    \item char
+    \item bool
+\end{itemize}
+Zelo pomembna je razlika med tipoma \textit{int} in \textit{float}. Pri \textit{intih} uporabljamo klasične operatorje, medtem, ko za \textit{floate} tem operatorjem dodamo piko na koncu. \\
+
+tipi funkcije
+$$
+tip_{arg} \rightarrow tip_{rez}
+$$
+tip naborov \footnote{Prazen nabor je tipa unit().}
+$$
+tip_1 * tip_2 * \cdots * tip_n
+$$
+tip seznama
+$$
+tip_{el} \quad list
+$$
+OCaml je pri tipih v seznamu zelo dosleden. Hkrati so lahko v seznamu zgolj elementi istega tipa. \\
+
+\noindent Vrednostim, ki imajo v tipih spremenljivke, pravimo \underline{parametrično polimorfne.} \textit{Using parametric polymorphism, a function or data type can be written generically so that it can handle values \underline{identically} without depending on their type.} \footnote{$\alpha$ tip}
 \subsubsection*{Primerjava med statičnimi in dinamičnimi tipi}
+OCaml uporablja \underline{statične} tipe, Python pa \underline{dinamične}. \\
+
+statični tipi:
+\begin{itemize}
+    \item compiler preveri, da so vsi tipi v funkciji pravi, preden poženemo program
+    \item s tem pridobimo to, da funkcija vedno vrže isti tip ven, kar je zelo uporabno za kompozicije
+\end{itemize}
+
+dinamični tipi:
+\begin{itemize}
+    \item programski jezik preveri pravilnost funkcije šele, ko jo kličemo
+\end{itemize}
+OCamlovi tipi so bogatejši od Pythonovih, saj nam dajo več podatkov \footnote{Za sezname celih števil nam OCaml vrne tip \textit{int list}, medtem, ko Python vrne zgolj \textit{list}.}
 \subsubsection*{Repni klici in repna rekurzija}
+Klic funkcije je \textit{repen}, če se izvede zadnji. Funkciji, kjer so vsi klici repni, pravimo \textit{repno rekurzivna funkcija}. \\
+
+OCaml optimizira repne klice. \\
+
+Python repnih klicev namenoma ne optimizira. \footnote{PRI OBEH NAPIŠI PREDNOSTI IN SLABOSTI} \\
+
+
 \subsubsection*{Parametrični tipi in polimorfne funkcije}
 \subsubsection*{Funkcije višjega reda in anonimne funkcije}
+Anonimne funkcije so funkcije, ki jih \textit{ne poimenujemo}. V OCamlu jih zapišemo kar kot \textit{fun x $\rightarrow$ fun(x)}. Uporabne so predvsem zato, da jih uporabimo zgolj enkrat in na seznamu.
 \subsubsection*{Delno uporabljene funkcije in curryiranje}
 \subsubsection*{Vsote in induktivni tipi}
 \subsubsection*{Različice funkcije \textit{fold}}
