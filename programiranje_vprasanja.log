@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.3.16)  16 MAR 2020 22:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.3.16)  17 MAR 2020 15:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -133,15 +133,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
-
- []
-
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 49--52
 
  []
 
@@ -150,51 +145,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-<slike/anonimna_funkcija.png, id=18, 697.60625pt x 232.87pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--63
+
+ []
+
+<slike/anonimna_funkcija.png, id=17, 697.60625pt x 232.87pt>
 File: slike/anonimna_funkcija.png Graphic file (type png)
 <use slike/anonimna_funkcija.png>
-Package pdftex.def Info: slike/anonimna_funkcija.png  used on input line 61.
+Package pdftex.def Info: slike/anonimna_funkcija.png  used on input line 69.
 (pdftex.def)             Requested size: 284.52756pt x 94.97984pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--64
+Underfull \hbox (badness 10000) in paragraph at lines 66--72
 
  []
 
-<slike/funkcija_visjega_reda.png, id=19, 673.51625pt x 58.2175pt>
+<slike/funkcija_visjega_reda.png, id=18, 673.51625pt x 58.2175pt>
 File: slike/funkcija_visjega_reda.png Graphic file (type png)
 <use slike/funkcija_visjega_reda.png>
-Package pdftex.def Info: slike/funkcija_visjega_reda.png  used on input line 69.
+Package pdftex.def Info: slike/funkcija_visjega_reda.png  used on input line 77.
 (pdftex.def)             Requested size: 284.52756pt x 24.5942pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--72
+Underfull \hbox (badness 10000) in paragraph at lines 73--80
+
+ []
+
+[2 </home/nace/Documents/git/programiranje1-ustni/slike/anonimna_funkcija.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
-[2 </home/nace/Documents/git/programiranje1-ustni/slike/anonimna_funkcija.png> </home/nace/Documents/git/programiranje1-ustni/slike/funkcija_visjega_reda.png>]
-<slike/fold_funkciji.png, id=24, 600.2425pt x 150.5625pt>
+<slike/fold_funkciji.png, id=23, 600.2425pt x 150.5625pt>
 File: slike/fold_funkciji.png Graphic file (type png)
 <use slike/fold_funkciji.png>
-Package pdftex.def Info: slike/fold_funkciji.png  used on input line 93.
+Package pdftex.def Info: slike/fold_funkciji.png  used on input line 112.
 (pdftex.def)             Requested size: 284.52756pt x 71.37088pt.
- [3 </home/nace/Documents/git/programiranje1-ustni/slike/fold_funkciji.png>] (/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.aux) ) 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 </home/nace/Documents/git/programiranje1-ustni/slike/funkcija_visjega_reda.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--158
+
+ []
+
+[4 </home/nace/Documents/git/programiranje1-ustni/slike/fold_funkciji.png>]
+<slike/indukcija_na_ab.png, id=32, 264.99pt x 113.42375pt>
+File: slike/indukcija_na_ab.png Graphic file (type png)
+<use slike/indukcija_na_ab.png>
+Package pdftex.def Info: slike/indukcija_na_ab.png  used on input line 162.
+(pdftex.def)             Requested size: 142.26378pt x 60.89311pt.
+ [5 </home/nace/Documents/git/programiranje1-ustni/slike/indukcija_na_ab.png>] (/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.aux) ) 
 Here is how much of TeX's memory you used:
- 1513 strings out of 492167
- 22070 string characters out of 6131558
- 88182 words of memory out of 5000000
- 5875 multiletter control sequences out of 15000+600000
+ 1521 strings out of 492167
+ 22283 string characters out of 6131558
+ 87173 words of memory out of 5000000
+ 5882 multiletter control sequences out of 15000+600000
  8206 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,8n,30p,392b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf (3 pages, 179316 bytes).
+Output written on /home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf (5 pages, 201176 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

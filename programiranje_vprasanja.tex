@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+\documentclass{article}
 \usepackage{graphicx}
 
 \begin{document}
@@ -46,12 +46,20 @@ dinamični tipi:
 \end{itemize}
 OCamlovi tipi so bogatejši od Pythonovih, saj nam dajo več podatkov \footnote{Za sezname celih števil nam OCaml vrne tip \textit{int list}, medtem, ko Python vrne zgolj \textit{list}.}
 \subsubsection*{Repni klici in repna rekurzija}
-Klic funkcije je \textit{repen}, če se izvede zadnji. Funkciji, kjer so vsi klici repni, pravimo \textit{repno rekurzivna funkcija}. \\
+Klic funkcije je \textit{repen}, če se izvede zadnji. Funkciji, kjer so vsi klici repni, pravimo \textit{repno rekurzivna funkcija}. 
+Pri \textit{repno rekurzivnih funkcijah} spreminjamo samo akumulator, zato si računalniku
+ni treba zapomniti celotnega procesa ampak zgolj vmesne vrednosti.\\
 
 OCaml optimizira repne klice. \\
 
-Python repnih klicev namenoma ne optimizira. \footnote{PRI OBEH NAPIŠI PREDNOSTI IN SLABOSTI} \\
-
+Python repnih klicev namenoma ne optimizira, da so sporočila
+o napakah bolj poučna. Tega, da sklad ne raste, ne 
+dosežemo tako, da optimiziramo repno rekurzijo, 
+ampak da optimiziramo repne klice na splošno. Torej poljubna funkcija,
+ki kliče drugo funkcijo, izgine iz kode. Razlog, zakaj ne 
+želimo po privzetem načinu izvzeti repnih klicev je v tem,
+da dobimo lep izpis o napakah. Če optimiziramo repne klice in
+vmesne funkcije izginejo iz zgodbe, se lahko "\textit{izgubimo}". \footnote{PRI OBEH NAPIŠI PREDNOSTI IN SLABOSTI} \\ 
 
 \subsubsection*{Parametrični tipi in polimorfne funkcije}
 \subsubsection*{Funkcije višjega reda in anonimne funkcije}
@@ -75,9 +83,20 @@ V OCamlu je navada, da pišemo \textit{fun x $\rightarrow$ fun(x)}. Operator $\r
 \subsubsection*{Vsote in induktivni tipi}
 \subsubsection*{Različice funkcije \textit{fold}}
 Funkcije \textit{fold} so funkcije višjega reda. Gre za družino funkcij, ki "nabirajo" vrednosti elementov
-po vrsti. Primer funkcije, ki sodi v družino \textit{fold}, je funkcija max. \footnote{NAPIŠI KAKO DELUJE} \\
+po vrsti. Primer funkcije, ki sodi v družino \textit{fold}, je funkcija max. \\
 
-\texttt{fold\_right}
+\noindent Uporabimo v funkcijah, kjer sledimo vzorcu:
+\begin{itemize}
+    \item vzami seznam in začetno vrednost akumulatorja
+    \item sprehodi se čez seznam
+    \item za vsak element v seznamu \textit{naredi nekaj} 
+    s trenutno vrednostjo akumulatorja in trenutnega elementa
+    \item nadaljuj z iteracijo po seznamu
+    \item ko prideš do konca seznama, vrni akumulator
+\end{itemize}
+Ta postopek lahko skrajšamo s funkcijo \textit{fold}, ki sprejme tri argumente. (\textit{funkcijo f, začetno vrednost akumulatorja} in \textit{seznam elementov}) \\
+
+\noindent\texttt{fold\_right}
 \begin{itemize}
     \item vrstni red združevanja elementov je desno $\rightarrow$ levo
     \item ni repno rekurzivna
@@ -94,6 +113,68 @@ Tipa funkcij sta različna.
     \label{fig: fold_funkciji}
 \end{figure}
 \subsubsection*{Dokazovanje z indukcijo na seznamih in drevesih}
+\underline{Indukcija na naravnih številih}
+$$
+P(0) \wedge (\forall m.P(m) \Rightarrow P(m^{+})) \Rightarrow \forall n.P(n)
+$$
+\underline{Indukcija na seznamih}
+$$
+P([]) \wedge (\forall x, xs. P(xs) \Rightarrow P(x :: xs)) \Rightarrow \forall ys.P(ys)
+$$
+ideja: \\
+
+\noindent Vsak seznam je ali \textit{prazen} ali pa ima \textit{glavo in nek krajši seznam.} \footnote{Ignoriramo neskončne sezname.} 
+Če imamo predikat $P$, ki velja na praznem seznamu in velja, 
+da iz tega, ko $P$ velja na repu $xs$, $P$ velja tudi na
+glavi in repu $x :: xs$, potem predikat $P$ velja na celem seznamu. \newline
+Ne moremo reči, da $P$ velja za $x$, saj je $P$ predikat,
+ki velja na seznamih, $x$ pa je zgolj element seznama, zato
+je nesmiselno govoriti o $P(x)$. \newline
+Indukcija na seznamih deluje, ker jo lahko prevedemo na
+indukcijo na naravnih številih. Iz predikata $P$ na seznamih
+moramo predelati predikat $Q$ na naravnih številih. To storimo tako,
+da definiramo
+$$
+Q(n) := \forall ws. |ws| = n \Rightarrow P(ws).
+$$
+Z besedami to pomeni \textit{"$Q(n)$ bo veljalo, če za vse sezname dolžine $n$ velja $P(ws)$."}
+V tem primeru je $Q(0)$ ekvivalentno $P([])$. To, da gremo iz
+tega, da če velja za rep, velja tudi za glavo, je ravno korak
+indukcije na naravnih številih. Mi predpostavimo, da velja za
+sezname $\cdots$\footnote{DOPIŠI}. \\
+
+\noindent\underline{Indukcija na drevesih}
+$$
+P(Empty) \wedge (\forall x, l, d. P(l) \wedge P(d) \Rightarrow P(Node(l, x, d))) \Rightarrow \forall t. P(t)
+$$
+Najprej pokažemo, da predikat velja za prazno drevo. V indukcijskem koraku
+predpostavimo, da velja za \textit{levega in desnega otroka}.
+Razlika od indukcije na dobro urejenih množicah je v tem,
+da smo tam predpostavili, da velja za \textit{vse} manjše. Tu
+predpostavimo, da velja samo za dve \textit{direktno manjši drevesi}.
+Pomembno pri indukciji na drevesih je to, da imamo neko \textit{velikost}, nekaj, 
+s čimer lahko indukcijo na drevesih prevedemo na indukcijo
+na naravnih številih. Dober primer je \textit{globina}. \\
+\newpage
+\noindent\underline{Indukcija na poljubnem tipu}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=50mm]{slike/indukcija_na_ab.png}
+    \label{fig:indukcija na ab}
+\end{figure}
+\begin{enumerate}
+    \item pokažemo, da predikat $P$ velja na $A$
+    \item pokažemo, da iz tega, da velja za \textit{"nek\_moj\_tip"}, velja tudi za $B$
+\end{enumerate}
+$$
+P(A) \wedge \forall m. P(m) \Rightarrow P(B m) \Rightarrow \forall n. P(n)
+$$
+\underline{Indukcija za bool}
+$$
+P(A) \wedge P(B) \Rightarrow \forall b. P(b) \footnotemark
+$$
+\footnotetext{Predpostavki sta samo, da velja za $A$ in za $B$. Nimamo nobenih manjših problemov,
+s katerimi bi prevedli na "navadno" indukcijo.}
 \subsubsection*{Signature in moduli}
 \subsection*{Iztočnice za podatkovne strukture in algoritme}
 \subsubsection*{Računska zahtevnost}

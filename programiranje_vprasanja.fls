@@ -63,9 +63,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
 OUTPUT /home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
 INPUT /home/nace/Documents/git/programiranje1-ustni/slike/anonimna_funkcija.png
 INPUT /home/nace/Documents/git/programiranje1-ustni/slike/anonimna_funkcija.png
 INPUT /home/nace/Documents/git/programiranje1-ustni/slike/anonimna_funkcija.png
@@ -77,6 +77,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /home/nace/Documents/git/programiranje1-ustni/slike/fold_funkciji.png
 INPUT /home/nace/Documents/git/programiranje1-ustni/slike/fold_funkciji.png
 INPUT /home/nace/Documents/git/programiranje1-ustni/slike/fold_funkciji.png
+INPUT /home/nace/Documents/git/programiranje1-ustni/slike/indukcija_na_ab.png
+INPUT /home/nace/Documents/git/programiranje1-ustni/slike/indukcija_na_ab.png
+INPUT /home/nace/Documents/git/programiranje1-ustni/slike/indukcija_na_ab.png
 INPUT /home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb

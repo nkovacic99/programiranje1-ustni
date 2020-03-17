@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1584395851 "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.tex" "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf" "programiranje_vprasanja" 1584395950
-  "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.aux" 1584395851 129 34cdc8cbad335092cb923317679eff43 ""
-  "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.tex" 1584395948 4709 8f15d976bc033e2e84b589483221abe3 ""
+["pdflatex"] 1584454573 "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.tex" "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf" "programiranje_vprasanja" 1584454573
+  "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.aux" 1584454573 167 37844a0a48e0289d5fe7545aa0fc80c0 ""
+  "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.tex" 1584454571 8567 42e9242d0d1fdf9d3a6ea78afe86eb33 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1572595918 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1572595918 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -55,14 +55,15 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1572595918 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1584380147 334148 1b9d30ff8c861d6082e3e9bfccd8d7eb ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1584380140 8044939 86768d064ab0abaed0b52e70cfdf05f5 ""
-  "programiranje_vprasanja.aux" 1584395851 129 34cdc8cbad335092cb923317679eff43 "pdflatex"
-  "programiranje_vprasanja.tex" 1584395948 4709 8f15d976bc033e2e84b589483221abe3 ""
+  "programiranje_vprasanja.aux" 1584454573 167 37844a0a48e0289d5fe7545aa0fc80c0 "pdflatex"
+  "programiranje_vprasanja.tex" 1584454571 8567 42e9242d0d1fdf9d3a6ea78afe86eb33 ""
   "slike/anonimna_funkcija.png" 1584390988 24813 8e082f316185e27044ea7e993e3ca81b ""
   "slike/fold_funkciji.png" 1584395342 9713 208c414d66cab297a8b1215e0a4e2954 ""
   "slike/funkcija_visjega_reda.png" 1584391397 5180 56d23d42dd5b83fba6a9c12099feb780 ""
+  "slike/indukcija_na_ab.png" 1584452711 14247 5077d1faeab537bf750e2b379e617e5b ""
   (generated)
-  "programiranje_vprasanja.log"
-  "programiranje_vprasanja.pdf"
-  "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf"
-  "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.log"
   "programiranje_vprasanja.aux"
+  "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.log"
+  "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf"
+  "programiranje_vprasanja.pdf"
+  "programiranje_vprasanja.log"
