@@ -1,0 +1,22 @@
+\contentsline {section}{\numberline {1}Iztočnice za funkcijsko programiranje}{1}% 
+\contentsline {subsection}{\numberline {1.1}Najpogostejši tipi v OCamlu}{1}% 
+\contentsline {subsection}{\numberline {1.2}Primerjava med statičnimi in dinamičnimi tipi}{1}% 
+\contentsline {subsection}{\numberline {1.3}Repni klici in repna rekurzija}{2}% 
+\contentsline {subsection}{\numberline {1.4}Parametrični tipi in polimorfne funkcije}{2}% 
+\contentsline {subsection}{\numberline {1.5}Funkcije višjega reda in anonimne funkcije}{2}% 
+\contentsline {subsection}{\numberline {1.6}Delno uporabljene funkcije in curryiranje}{3}% 
+\contentsline {subsection}{\numberline {1.7}Vsote in induktivni tipi}{4}% 
+\contentsline {subsection}{\numberline {1.8}Različice funkcije \textit {fold}}{4}% 
+\contentsline {subsection}{\numberline {1.9}Dokazovanje z indukcijo na seznamih in drevesih}{5}% 
+\contentsline {subsection}{\numberline {1.10}Signature in moduli}{6}% 
+\contentsline {section}{\numberline {2}Iztočnice za podatkovne strukture in algoritme}{7}% 
+\contentsline {subsection}{\numberline {2.1}Računska zahtevnost}{7}% 
+\contentsline {subsection}{\numberline {2.2}Iskalna drevesa in AVL drevesa}{8}% 
+\contentsline {subsection}{\numberline {2.3}Spremenljive in nespremenljive podatkovne strukture}{9}% 
+\contentsline {subsection}{\numberline {2.4}Predstavitev podatkov v pomnilniku}{9}% 
+\contentsline {subsection}{\numberline {2.5}Razlika med verižnimi seznami in tabelami}{10}% 
+\contentsline {subsection}{\numberline {2.6}Metoda deli in vladaj}{10}% 
+\contentsline {subsection}{\numberline {2.7}Fisher - Yatesov algoritem}{11}% 
+\contentsline {subsection}{\numberline {2.8}Algoritmi za urejanje}{11}% 
+\contentsline {subsection}{\numberline {2.9}Časovna zahtevnost hitrega urejanja}{11}% 
+\contentsline {subsection}{\numberline {2.10}Dinamično programiranje in memoizacija}{11}% 
