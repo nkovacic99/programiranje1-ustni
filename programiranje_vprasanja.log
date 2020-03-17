@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.3.16)  17 MAR 2020 15:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.3.16)  17 MAR 2020 16:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -22,11 +22,65 @@ File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2019/04/01 v2.17c AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2855.
+LaTeX Info: Redefining \] on input line 2856.
 ) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks19
 ) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/10/08 v1.3c Standard LaTeX Graphics (DPC,SPQR)
  (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
@@ -38,36 +92,36 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
  (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
 ) (/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.aux)
 \openout1 = `programiranje_vprasanja.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count88
-\scratchdimen=\dimen105
-\scratchbox=\box27
-\nofMPsegments=\count89
-\nofMParguments=\count90
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count91
-\MPscratchDim=\dimen106
-\MPnumerator=\count92
-\makeMPintoPDFobject=\count93
-\everyMPtoPDFconversion=\toks16
+\scratchcounter=\count100
+\scratchdimen=\dimen114
+\scratchbox=\box29
+\nofMPsegments=\count101
+\nofMParguments=\count102
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count103
+\MPscratchDim=\dimen115
+\MPnumerator=\count104
+\makeMPintoPDFobject=\count105
+\everyMPtoPDFconversion=\toks21
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
@@ -104,125 +158,168 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 10.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 11.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 20.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 20.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 23.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 23.
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 31--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 49--52
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--63
+Underfull \hbox (badness 10000) in paragraph at lines 56--64
 
  []
 
 <slike/anonimna_funkcija.png, id=17, 697.60625pt x 232.87pt>
 File: slike/anonimna_funkcija.png Graphic file (type png)
 <use slike/anonimna_funkcija.png>
-Package pdftex.def Info: slike/anonimna_funkcija.png  used on input line 69.
+Package pdftex.def Info: slike/anonimna_funkcija.png  used on input line 70.
 (pdftex.def)             Requested size: 284.52756pt x 94.97984pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--72
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
 
  []
 
 <slike/funkcija_visjega_reda.png, id=18, 673.51625pt x 58.2175pt>
 File: slike/funkcija_visjega_reda.png Graphic file (type png)
 <use slike/funkcija_visjega_reda.png>
-Package pdftex.def Info: slike/funkcija_visjega_reda.png  used on input line 77.
+Package pdftex.def Info: slike/funkcija_visjega_reda.png  used on input line 78.
 (pdftex.def)             Requested size: 284.52756pt x 24.5942pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--80
+Underfull \hbox (badness 10000) in paragraph at lines 74--81
 
  []
 
 [2 </home/nace/Documents/git/programiranje1-ustni/slike/anonimna_funkcija.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 88--94
 
  []
 
-<slike/fold_funkciji.png, id=23, 600.2425pt x 150.5625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
+
+ []
+
+<slike/curryiranje_tipi.png, id=23, 736.7525pt x 199.74625pt>
+File: slike/curryiranje_tipi.png Graphic file (type png)
+<use slike/curryiranje_tipi.png>
+Package pdftex.def Info: slike/curryiranje_tipi.png  used on input line 109.
+(pdftex.def)             Requested size: 284.52756pt x 77.13875pt.
+[3 </home/nace/Documents/git/programiranje1-ustni/slike/funkcija_visjega_reda.png> </home/nace/Documents/git/programiranje1-ustni/slike/curryiranje_tipi.png>]
+<slike/curryiranje.png, id=27, 762.85pt x 162.6075pt>
+File: slike/curryiranje.png Graphic file (type png)
+<use slike/curryiranje.png>
+Package pdftex.def Info: slike/curryiranje.png  used on input line 119.
+(pdftex.def)             Requested size: 284.52756pt x 60.64766pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+<slike/fold_funkciji.png, id=28, 600.2425pt x 150.5625pt>
 File: slike/fold_funkciji.png Graphic file (type png)
 <use slike/fold_funkciji.png>
-Package pdftex.def Info: slike/fold_funkciji.png  used on input line 112.
+Package pdftex.def Info: slike/fold_funkciji.png  used on input line 151.
 (pdftex.def)             Requested size: 284.52756pt x 71.37088pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 </home/nace/Documents/git/programiranje1-ustni/slike/funkcija_visjega_reda.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
+[4 </home/nace/Documents/git/programiranje1-ustni/slike/curryiranje.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--145
+Underfull \hbox (badness 10000) in paragraph at lines 178--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--158
+Underfull \hbox (badness 10000) in paragraph at lines 188--197
 
  []
 
-[4 </home/nace/Documents/git/programiranje1-ustni/slike/fold_funkciji.png>]
-<slike/indukcija_na_ab.png, id=32, 264.99pt x 113.42375pt>
+[5 </home/nace/Documents/git/programiranje1-ustni/slike/fold_funkciji.png>]
+<slike/indukcija_na_ab.png, id=37, 264.99pt x 113.42375pt>
 File: slike/indukcija_na_ab.png Graphic file (type png)
 <use slike/indukcija_na_ab.png>
-Package pdftex.def Info: slike/indukcija_na_ab.png  used on input line 162.
+Package pdftex.def Info: slike/indukcija_na_ab.png  used on input line 201.
 (pdftex.def)             Requested size: 142.26378pt x 60.89311pt.
- [5 </home/nace/Documents/git/programiranje1-ustni/slike/indukcija_na_ab.png>] (/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--222
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+
+ []
+
+[6 </home/nace/Documents/git/programiranje1-ustni/slike/indukcija_na_ab.png>] [7] (/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.aux) ) 
 Here is how much of TeX's memory you used:
- 1521 strings out of 492167
- 22283 string characters out of 6131558
- 87173 words of memory out of 5000000
- 5882 multiletter control sequences out of 15000+600000
- 8206 words of font info for 29 fonts, out of 8000000 for 9000
+ 2167 strings out of 492167
+ 29699 string characters out of 6131558
+ 98297 words of memory out of 5000000
+ 6508 multiletter control sequences out of 15000+600000
+ 9110 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,8n,30p,392b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,8n,30p,392b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf (5 pages, 201176 bytes).
+Output written on /home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf (7 pages, 279539 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 90 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

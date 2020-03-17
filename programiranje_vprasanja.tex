@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{amsmath}
 \usepackage{graphicx}
 
 \begin{document}
@@ -78,8 +79,46 @@ funkcija, ki kot argument uporabi neko drugo funkcijo v določeni spremenljivki.
     \label{fig:funkcija visjega reda}
 \end{figure} \\
 
+Če funkciji, ki sprejme dva argumenta podamo samo en argument,
+dobimo novo funkcijo. Če mi to funkcijo poimenujemo, jo lahko
+(kasneje) uporabimo na drugem argumentu. \\
+
 V OCamlu je navada, da pišemo \textit{fun x $\rightarrow$ fun(x)}. Operator $\rightarrow$ v tem zapisu je desno asociativen.
 \subsubsection*{Delno uporabljene funkcije in curryiranje}
+Če imamo funkcijo, ki sprejme več argumentov, mi pa
+ne podamo vseh, dobimo \textit{delno uporabljeno funkcijo}.
+Dobimo torej novo funkcijo, ki ima sprejete že podane argumente,
+na ostale pa čaka. Ko ji dodamo tudi ostale argumente, 
+deluje identično, kot bi delovala, če ji vse argumente podamo
+kar na začetku.\\
+
+\noindent\underline{Curryirane funkcije} \footnote{Haskell Curry - po njem se imenuje tudi programski jezik Haskell.} \\
+
+Imamo funkcijo dveh argumentov, ki torej sprejme prvi argument,
+sprejme drugega in nekaj naredi. Če ji podamo samo prvi element,
+dobimo novo funkcijo (ki čaka na drug argument). \\
+
+To vidimo tudi kadar imamo funkcijo $f$, ki sprejme dva argumenta $x$ in $y$.
+V OCamlu to napišemo kot $f x y$. Ta zapis je enak kot $(f x) y$,
+torej $(f x)$ je funkcija, ki čaka še drugi argument $y$, ki je
+v tem primeru že podan. \\
+
+primer:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=100mm]{slike/curryiranje_tipi.png}
+    \label{fig:curryiranje_tipi}
+\end{figure}
+\newpage
+Tipa $A * B \rightarrow C$ in $A \rightarrow B \rightarrow C$ sta si izomorfna.
+Prvi tip predstavlja \textit{običajno funkcijo dveh argumentov},
+drugi pa \textit{Curryirano funkcijo dveh argumentov}. Izomorfizmu
+med tema dvema funkcijama pravimo \textit{curryiranje}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=100mm]{slike/curryiranje.png}
+    \label{fig:curryiranje}
+\end{figure}
 \subsubsection*{Vsote in induktivni tipi}
 \subsubsection*{Različice funkcije \textit{fold}}
 Funkcije \textit{fold} so funkcije višjega reda. Gre za družino funkcij, ki "nabirajo" vrednosti elementov
@@ -176,9 +215,29 @@ $$
 \footnotetext{Predpostavki sta samo, da velja za $A$ in za $B$. Nimamo nobenih manjših problemov,
 s katerimi bi prevedli na "navadno" indukcijo.}
 \subsubsection*{Signature in moduli}
+Modularnost kode nam pomaga, da kodo razbijemo na manjše
+enote, ki med seboj ustrezno sodelujejo. Osnovno modularnost nam
+ponuja pisanje funkcij in tipi, dosežemo pa jo lahko tudi z
+\textit{moduli}. \\
+
+\noindent Modul je zbirka tipov in vrednosti. Vse definicije tipov in funkcij
+lahko \textit{združimo} v zbirko in tej zbirki pravimo modul. 
+Vsaka datoteka je že sama po sebi modul funkcij in tipov, ki
+so napisane v tisti datoteki. Do tipov in funkcij modula dostopamo
+tako, da napišemo \textit{modul.funkcija} oz. \textit{modul.tip}. \\
+
+\noindent Razlika med datoteko funkcij in tipov in modulom je v tem, da lahko imamo
+v eni datoteki več modulov. Vsebina modula je vse med \textit{struct} in \textit{end}.
+Tip modula se imenuje \textit{signatura} in pove, kaj je v 
+modulu shranjeno. \\
+
+\noindent Funkcije lahko v modulu tudi skrivamo. Če signaturi
+nekega modula priredimo novo signaturo, skrijemo vse funkcije,
+ki niso definirane v novi signaturi. Funkcije lahko še vedno uporabljamo.
 \subsection*{Iztočnice za podatkovne strukture in algoritme}
 \subsubsection*{Računska zahtevnost}
 \subsubsection*{Iskalna drevesa in AVL drevesa}
+V iskalna drevesa lahko spravljamo zgolj elemente, ki jih lahko primerjamo.
 \subsubsection*{Spremenljive in nespremenljive podatkovne strukture}
 \subsubsection*{Predstavitev podatkov v pomnilniku}
 \subsubsection*{Razlika med verižnimi seznami in tabelami}
