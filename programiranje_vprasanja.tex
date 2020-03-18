@@ -24,7 +24,7 @@ okrajšave tipov
 \end{itemize}
 Zelo pomembna je razlika med tipoma \textit{int} in \textit{float}. Pri \textit{intih} uporabljamo klasične operatorje, medtem, ko za \textit{floate} tem operatorjem dodamo piko na koncu. \\
 
-tipi funkcije
+\noindent tipi funkcije
 $$
 tip_{arg} \rightarrow tip_{rez}
 $$
@@ -58,9 +58,9 @@ Klic funkcije je \textit{repen}, če se izvede zadnji. Funkciji, kjer so vsi kli
 Pri \textit{repno rekurzivnih funkcijah} spreminjamo samo akumulator, zato si računalniku
 ni treba zapomniti celotnega procesa ampak zgolj vmesne vrednosti.\\
 
-OCaml optimizira repne klice. \\
+\noindent OCaml optimizira repne klice. \\
 
-Python repnih klicev namenoma ne optimizira, da so sporočila
+\noindent Python repnih klicev namenoma ne optimizira, da so sporočila
 o napakah bolj poučna. Tega, da sklad ne raste, ne 
 dosežemo tako, da optimiziramo repno rekurzijo, 
 ampak da optimiziramo repne klice na splošno. Torej poljubna funkcija,
@@ -70,6 +70,15 @@ da dobimo lep izpis o napakah. Če optimiziramo repne klice in
 vmesne funkcije izginejo iz zgodbe, se lahko "\textit{izgubimo}". \footnote{PRI OBEH NAPIŠI PREDNOSTI IN SLABOSTI} \\ 
 
 \subsection{Parametrični tipi in polimorfne funkcije}
+Polimorfne funkcijo so opisane že zgoraj pod prvim vprašanjem. 
+Gre za funkcije, katerih tip je v bistvu $\alpha$ oz. $'a$. \\
+
+\noindent Parametrični tipi so tipi, ki nastopajo v polimorfnih 
+funkcijah. Primer takega tipa je \textit{'a list}. Primer polimorfne 
+funkcije s parametričnimi tipi je \texttt{fun 'a $\rightarrow$ 'b list $\rightarrow$ 'c list}.
+Ta funkcija sprejme poljuben element in seznam poljubnih elementov, 
+ki po tipu niso nujni enaki prvemu elementu in vrne seznam elementov
+nekega tipa. 
 \subsection{Funkcije višjega reda in anonimne funkcije}
 Anonimne funkcije so funkcije, ki jih \textit{ne poimenujemo}. V OCamlu jih zapišemo kar kot \textit{fun x $\rightarrow$ fun(x)}. Uporabne so predvsem kadar jih uporabimo zgolj enkrat in na seznamu.
 \begin{figure}[h!]
@@ -78,7 +87,7 @@ Anonimne funkcije so funkcije, ki jih \textit{ne poimenujemo}. V OCamlu jih zapi
     \label{fig:anonimna funkcija}
 \end{figure} \\
 
-Funkcije nam ob dani spremenljivki vrnejo določene vrednosti. Če te vrednosti uporabimo naprej v drugi funkciji, govorimo o \textit{funkcijah višjega reda}. Torej funkcija višjega reda je vsaka 
+\noindent Funkcije nam ob dani spremenljivki vrnejo določene vrednosti. Če te vrednosti uporabimo naprej v drugi funkciji, govorimo o \textit{funkcijah višjega reda}. Torej funkcija višjega reda je vsaka 
 funkcija, ki kot argument uporabi neko drugo funkcijo v določeni spremenljivki.
 \begin{figure}[h!]
     \centering
@@ -86,11 +95,11 @@ funkcija, ki kot argument uporabi neko drugo funkcijo v določeni spremenljivki.
     \label{fig:funkcija visjega reda}
 \end{figure} \\
 
-Če funkciji, ki sprejme dva argumenta podamo samo en argument,
+\noindent Če funkciji, ki sprejme dva argumenta podamo samo en argument,
 dobimo novo funkcijo. Če mi to funkcijo poimenujemo, jo lahko
 (kasneje) uporabimo na drugem argumentu. \\
 
-V OCamlu je navada, da pišemo \textit{fun x $\rightarrow$ fun(x)}. Operator $\rightarrow$ v tem zapisu je desno asociativen.
+\noindent V OCamlu je navada, da pišemo \textit{fun x $\rightarrow$ fun(x)}. Operator $\rightarrow$ v tem zapisu je desno asociativen.
 \subsection{Delno uporabljene funkcije in curryiranje}
 Če imamo funkcijo, ki sprejme več argumentov, mi pa
 ne podamo vseh, dobimo \textit{delno uporabljeno funkcijo}.
@@ -101,11 +110,11 @@ kar na začetku.\\
 
 \noindent\underline{Curryirane funkcije} \footnote{Haskell Curry - po njem se imenuje tudi programski jezik Haskell.} \\
 
-Imamo funkcijo dveh argumentov, ki torej sprejme prvi argument,
+\noindent Imamo funkcijo dveh argumentov, ki torej sprejme prvi argument,
 sprejme drugega in nekaj naredi. Če ji podamo samo prvi element,
 dobimo novo funkcijo (ki čaka na drug argument). \\
 
-To vidimo tudi kadar imamo funkcijo $f$, ki sprejme dva argumenta $x$ in $y$.
+\noindent To vidimo tudi kadar imamo funkcijo $f$, ki sprejme dva argumenta $x$ in $y$.
 V OCamlu to napišemo kot $f x y$. Ta zapis je enak kot $(f x) y$,
 torej $(f x)$ je funkcija, ki čaka še drugi argument $y$, ki je
 v tem primeru že podan. \\
@@ -126,6 +135,27 @@ med tema dvema funkcijama pravimo \textit{curryiranje}.
     \label{fig:curryiranje}
 \end{figure}
 \subsection{Vsote in induktivni tipi}
+Tip vsota je sestavljen iz posameznih kosov. Vrednosti tega
+tipa naštejemo. Vsako vrednost napišemo z veliko začetnico in jih
+ločimo z navpičnimi črtami. Tem vrednostim pravimo \textit{variante}.
+Vsaka varianta ima svoj \textit{konstruktor} in ti konstruktorji
+lahko sprejmejo tudi argumente. \\
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=75mm]{slike/konstruktorji_in_variante.png}
+    \label{fig:konstruktorji in variante}
+\end{figure}
+
+\noindent V zgornjem primeru je vsota sestavljena iz treh variant (Tocka,
+Krog, Pravokotnik), Pravokotnik kot konstruktor pa sprejme
+dva floata. \\
+
+\noindent Delno definirane funkcije so funkcije, kjer ne naštejemo vseh variant.
+Zanje je najvarneje, da uporabimo tip \textit{option}. Če ga uporabimo 
+nas tipi prisilijo, da obravnavamo robne primere. \footnote{PREVERI, KAJ 
+SO INDUKTIVNI TIPI}
+
 \subsection{Različice funkcije \textit{fold}}
 Funkcije \textit{fold} so funkcije višjega reda. Gre za družino funkcij, ki "nabirajo" vrednosti elementov
 po vrsti. Primer funkcije, ki sodi v družino \textit{fold}, je funkcija max. \\
@@ -322,6 +352,16 @@ POPRAVI MESTA SLIK} \\
 \end{figure}
 
 \subsection{Spremenljive in nespremenljive podatkovne strukture}
+Podatkovne strukture so dveh tipov in sicer lahko so \textit{spremenljive}
+ali pa \textit{nespremenljive}. Glavna razlika med tema tipoma je
+v tem, da lahko spremenljive strukture spremenimo "na mestu", 
+kar pomeni, da nam ni potrebno na novo generirati cele strukture, 
+če ji želimo dodati ali odvzeti element. Pri nespremenljivih strukturah
+moramo to storiti. Ali je podatkovna struktura spremenljiva ali
+ne, je odvisno od tega, kako je shranjena v pomnilniku. \\
+
+\noindent Primer nespremenljive strukture v OCamlu je seznam, primer nespremenljive 
+pa tabela in hash tabela. 
 \subsection{Predstavitev podatkov v pomnilniku}
 V OCamlu so seznami implementirani z verižnimi seznami. To pomeni,
 da vsak seznam sestavljata glava in rep.
@@ -391,7 +431,11 @@ na manjši problem. Izvedemo jo v treh korakih
     \item podnaloge rekurzivno rešimo
     \item dobljene rešitve združimo v rešitev prvotne naloge
 \end{itemize}
-\underline{urejanje z zlivanjem} \\
+
+Temu, da rešitve podnalog sestavljajo rešitev celote, pravimo 
+\textit{lastnost optimalne podstrukture}. \\
+
+\noindent \underline{urejanje z zlivanjem} \\
 
 \noindent Seznam damo na polovico in vsakega od njiju rekurzivno uredimo.
 Dobimo dva urejena seznama, kjer vsak vsebuje polovico
@@ -522,4 +566,41 @@ izmed zgornjih algoritmov.
 Obravnava je že zgoraj v podpoglavju \textit{Metoda deli in 
 vladaj}. \footnote{PREMISLI, ČE JO RES DOBRO RAZUMEŠ.}
 \subsection{Dinamično programiranje in memoizacija}
+Razlika med dinamičnim programiranjem in metodo deli in vladaj je 
+v tem, da pri dinamičnem programiranju problema ne moremo
+razbiti v podprobleme, ki bi  bili za faktor manjši, 
+rešuje nas pa to, da se problemi prekrivajo, kar pomeni,
+da isti problem rešujemo večkrat. \\
+
+\noindent Ponavljanju problemov se izognemo na dva načina
+\begin{itemize}
+    \item rešitve pripravimo v ustreznem vrstnem redu \textit{(dinamično programiranje)}
+    \item rešitve si samodejno shranjujemo \textit{(memoizacija)}
+\end{itemize}
+
+\noindent\underline{dinamično programiranje}
+\begin{itemize}
+    \item rešitve podnalog sestavljajo rešitev celote
+    \item podnaloge se \textit{prekrivajo}
+\end{itemize}
+
+\noindent\underline{memoizacija}\footnote{\textit{memoizacija = "rešitve is samodejno shranjujemo"}} \\
+
+\noindent Stvari si zapomnimo v seznam, kjer so ključi argumenti,
+vrednosti pa pripadajoče rešitve problemov pri danem 
+argumentu. Slovarji so implementirani z zgoščevalnimi tabelami, katerih
+časovna zahtevnost je konstantna. Enako je s shranjevanjem elementov
+v slovar. V Pythonu lahko funkcijo, ki memoizira napišemo sami, 
+je pa že vključena v knjižnjici \textit{functools}. Do nje 
+dostopamo tako, da zgoraj v datoteko napišemo \textit{from 
+functools import lru\_cache}, v vrstico nad funkcijo pa moramo posebej
+napisati $@$\textit{lru\_cache(maxsize=None)}. \\
+
+\noindent\textit{lru\_cache} deluje tako, da pogleda, če je ključ že v
+slovarju. Če ga ni, si ga shrani. Do problemov pride, če si za 
+argumente vzamemo sezname, saj seznamov ne moremo shraniti v 
+slovar. Tega problema se lahko rešimo s pomožno funkcijo. \\
+
+Za memoizacijo v OCamlu ne uporabimo slovarjev, ampak \textit{zgoščevalne
+tabele}. 
 \end{document}
