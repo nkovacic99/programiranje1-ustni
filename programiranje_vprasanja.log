@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.3.16)  18 MAR 2020 11:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.3.16)  18 MAR 2020 15:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -185,12 +185,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-[1]
+
 Underfull \hbox (badness 10000) in paragraph at lines 57--60
 
  []
 
-
+[1]
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
@@ -200,7 +200,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--71
 
  []
 
-<slike/anonimna_funkcija.png, id=20, 697.60625pt x 232.87pt>
+<slike/anonimna_funkcija.png, id=21, 697.60625pt x 232.87pt>
 File: slike/anonimna_funkcija.png Graphic file (type png)
 <use slike/anonimna_funkcija.png>
 Package pdftex.def Info: slike/anonimna_funkcija.png  used on input line 77.
@@ -210,7 +210,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--80
 
  []
 
-<slike/funkcija_visjega_reda.png, id=21, 673.51625pt x 58.2175pt>
+<slike/funkcija_visjega_reda.png, id=22, 673.51625pt x 58.2175pt>
 File: slike/funkcija_visjega_reda.png Graphic file (type png)
 <use slike/funkcija_visjega_reda.png>
 Package pdftex.def Info: slike/funkcija_visjega_reda.png  used on input line 85.
@@ -221,14 +221,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--88
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2 </home/nace/Documents/git/programiranje1-ustni/slike/anonimna_funkcija.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
-
+[2 </home/nace/Documents/git/programiranje1-ustni/slike/anonimna_funkcija.png> </home/nace/Documents/git/programiranje1-ustni/slike/funkcija_visjega_reda.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 95--101
 
  []
@@ -253,12 +250,12 @@ File: slike/curryiranje_tipi.png Graphic file (type png)
 <use slike/curryiranje_tipi.png>
 Package pdftex.def Info: slike/curryiranje_tipi.png  used on input line 116.
 (pdftex.def)             Requested size: 284.52756pt x 77.13875pt.
-[3 </home/nace/Documents/git/programiranje1-ustni/slike/funkcija_visjega_reda.png> </home/nace/Documents/git/programiranje1-ustni/slike/curryiranje_tipi.png>]
+[3 </home/nace/Documents/git/programiranje1-ustni/slike/curryiranje_tipi.png>]
 <slike/curryiranje.png, id=30, 762.85pt x 162.6075pt>
 File: slike/curryiranje.png Graphic file (type png)
 <use slike/curryiranje.png>
 Package pdftex.def Info: slike/curryiranje.png  used on input line 126.
-(pdftex.def)             Requested size: 284.52756pt x 60.64766pt.
+(pdftex.def)             Requested size: 213.39566pt x 45.48512pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
@@ -274,10 +271,7 @@ File: slike/fold_funkciji.png Graphic file (type png)
 <use slike/fold_funkciji.png>
 Package pdftex.def Info: slike/fold_funkciji.png  used on input line 158.
 (pdftex.def)             Requested size: 284.52756pt x 71.37088pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4 </home/nace/Documents/git/programiranje1-ustni/slike/curryiranje.png>]
+[4 </home/nace/Documents/git/programiranje1-ustni/slike/curryiranje.png> </home/nace/Documents/git/programiranje1-ustni/slike/fold_funkciji.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 169--171
 
  []
@@ -292,7 +286,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--204
 
  []
 
-[5 </home/nace/Documents/git/programiranje1-ustni/slike/fold_funkciji.png>]
+[5]
 <slike/indukcija_na_ab.png, id=40, 264.99pt x 113.42375pt>
 File: slike/indukcija_na_ab.png Graphic file (type png)
 <use slike/indukcija_na_ab.png>
@@ -322,7 +316,7 @@ Overfull \hbox (3.7146pt too wide) in paragraph at lines 245--245
 File: slike/racunska_zahtevnost_graf.png Graphic file (type png)
 <use slike/racunska_zahtevnost_graf.png>
 Package pdftex.def Info: slike/racunska_zahtevnost_graf.png  used on input line 253.
-(pdftex.def)             Requested size: 284.52756pt x 193.5684pt.
+(pdftex.def)             Requested size: 213.39566pt x 145.1723pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 257--263
 
@@ -360,7 +354,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: slike/prikaz_veriznih_seznamov.png Graphic file (type png)
 <use slike/prikaz_veriznih_seznamov.png>
 Package pdftex.def Info: slike/prikaz_veriznih_seznamov.png  used on input line 329.
-(pdftex.def)             Requested size: 284.52756pt x 209.71956pt.
+(pdftex.def)             Requested size: 213.39566pt x 157.2801pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 325--339
 
@@ -376,81 +370,132 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--351
 File: slike/pomnilnik_nov_seznam.png Graphic file (type png)
 <use slike/pomnilnik_nov_seznam.png>
 Package pdftex.def Info: slike/pomnilnik_nov_seznam.png  used on input line 355.
-(pdftex.def)             Requested size: 284.52756pt x 277.05067pt.
- [10 </home/nace/Documents/git/programiranje1-ustni/slike/pomnilnik_nov_seznam.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+(pdftex.def)             Requested size: 213.39566pt x 207.77611pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 361--368
 
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 418--419
+<slike/tabele.png, id=59, 344.28625pt x 215.80624pt>
+File: slike/tabele.png Graphic file (type png)
+<use slike/tabele.png>
+Package pdftex.def Info: slike/tabele.png  used on input line 371.
+(pdftex.def)             Requested size: 213.39566pt x 133.76225pt.
+<slike/Python_list.png, id=60, 319.1925pt x 209.78375pt>
+File: slike/Python_list.png Graphic file (type png)
+<use slike/Python_list.png>
+Package pdftex.def Info: slike/Python_list.png  used on input line 378.
+(pdftex.def)             Requested size: 213.39566pt x 140.25026pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 </home/nace/Documents/git/programiranje1-ustni/slike/pomnilnik_nov_seznam.png> </home/nace/Documents/git/programiranje1-ustni/slike/tabele.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
+
+ []
+
+<slike/urejanje_z_zlivanjem.png, id=64, 699.61375pt x 502.87875pt>
+File: slike/urejanje_z_zlivanjem.png Graphic file (type png)
+<use slike/urejanje_z_zlivanjem.png>
+Package pdftex.def Info: slike/urejanje_z_zlivanjem.png  used on input line 419.
+(pdftex.def)             Requested size: 213.39566pt x 153.38162pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
+
+ []
+
+[11 </home/nace/Documents/git/programiranje1-ustni/slike/python_list.png>]
+<slike/hitro_urejanje.png, id=70, 580.1675pt x 488.82625pt>
+File: slike/hitro_urejanje.png Graphic file (type png)
+<use slike/hitro_urejanje.png>
+Package pdftex.def Info: slike/hitro_urejanje.png  used on input line 446.
+(pdftex.def)             Requested size: 213.39566pt x 179.79625pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--426
+Underfull \hbox (badness 10000) in paragraph at lines 453--457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--428
+Underfull \hbox (badness 10000) in paragraph at lines 458--459
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--435
+Underfull \hbox (badness 10000) in paragraph at lines 463--465
+
+ []
+
+[12 </home/nace/Documents/git/programiranje1-ustni/slike/urejanje_z_zlivanjem.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 466--475
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--440
+Underfull \hbox (badness 10000) in paragraph at lines 480--482
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--442
+Underfull \hbox (badness 10000) in paragraph at lines 483--487
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--447
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+Underfull \hbox (badness 10000) in paragraph at lines 490--494
+
+ []
+
+[13 </home/nace/Documents/git/programiranje1-ustni/slike/hitro_urejanje.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--457
+Underfull \hbox (badness 10000) in paragraph at lines 497--504
 
  []
 
-[12] [13] (/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.aux) ) 
+[14] (/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.aux) ) 
 Here is how much of TeX's memory you used:
- 2212 strings out of 492167
- 31140 string characters out of 6131558
- 101366 words of memory out of 5000000
- 6545 multiletter control sequences out of 15000+600000
+ 2244 strings out of 492167
+ 31920 string characters out of 6131558
+ 100424 words of memory out of 5000000
+ 6573 multiletter control sequences out of 15000+600000
  9110 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,9n,30p,392b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf (14 pages, 647002 bytes).
+Output written on /home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf (15 pages, 898245 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 132 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

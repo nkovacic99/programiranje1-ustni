@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
 \usepackage{amsmath}
 \usepackage{graphicx}
 
@@ -123,7 +123,7 @@ drugi pa \textit{Curryirano funkcijo dveh argumentov}. Izomorfizmu
 med tema dvema funkcijama pravimo \textit{curryiranje}.
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=100mm]{slike/curryiranje.png}
+    \includegraphics[width=75mm]{slike/curryiranje.png}
     \label{fig:curryiranje}
 \end{figure}
 \subsection{Vsote in induktivni tipi}
@@ -250,7 +250,7 @@ $$
 $$
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=100mm]{slike/racunska_zahtevnost_graf.png}
+    \includegraphics[width=75mm]{slike/racunska_zahtevnost_graf.png}
     \label{fig:graf racunske zahtevnosti}
 \end{figure}
 
@@ -326,7 +326,7 @@ V OCamlu so seznami implementirani z verižnimi seznami. To pomeni,
 da vsak seznam sestavljata glava in rep.
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=100mm]{slike/prikaz_veriznih_seznamov.png}
+    \includegraphics[width=75mm]{slike/prikaz_veriznih_seznamov.png}
     \label{fig:prikaz_veriznih}
 \end{figure}
 \noindent V vsakem prostoru je napisan en podatek. Vidimo, da je seznam $s$
@@ -352,11 +352,32 @@ dodati temu seznamu, nato pa cel seznam preslikamo na teh $n$ mest.
 \noindent Primer pomnilnika za določeni seznam.
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=100mm]{slike/pomnilnik_nov_seznam.png}
+    \includegraphics[width=75mm]{slike/pomnilnik_nov_seznam.png}
     \label{fig:pomnilnik nov seznam}
 \end{figure}
 \subsection{Razlika med verižnimi seznami in tabelami}
-Verižni seznami so opisani že v zgornjem subsectionu.
+Verižni seznami so opisani že v zgornjem subsectionu. \\
+
+\noindent Tabele imajo tip \textit{array}. Tabele so v pomnilniku shranjene
+tako, da je na prvem mestu velikost tabele, na naslednjih
+pa zaporedni členi tabele. Razlika v zapisu seznama in tabele je v
+tem, da elemente tabele vstavimo med $|\quad|$. Tabele v OCamlu
+imajo fiksno dolžino. Tip \textit{array} je spremenljiv in elemente
+spreminjamo z uporabo $\leftarrow$. Funkcije lahko vrnejo novo
+tabelo ali pa obstoječo spremenijo na mestu.\\
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=75mm]{slike/tabele.png}
+    \label{fig:tabele}
+\end{figure}
+
+\noindent V Pythonu so seznami predstavljeni tako:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=75mm]{slike/Python_list.png}
+    \label{fig:Python list}
+\end{figure}
 \subsection{Metoda deli in vladaj}
 Filozofija metode deli in vladaj je v tem, da problem razbijemo
 na manjši problem. Izvedemo jo v treh korakih
@@ -393,7 +414,13 @@ To bo ravno pri logaritmu. Dobimo
     \item najslabša časovna zahtevnost je $O(n \log n)$
     \item prostorska zahtevnost je $O(n)$
 \end{itemize}
-\underline{hitro urejanje} \\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=75mm]{slike/urejanje_z_zlivanjem.png}
+    \label{fig:urejanje z zlivanjem}
+\end{figure}
+
+\noindent\underline{hitro urejanje} \\
 
 \noindent Ideja je, da se potrudimo, kako seznam razdelimo, 
 vsak podseznam rekurzivno uredimo in ju neumno damo skupaj. Izberemo si \textit{pivot} točko in
@@ -414,7 +441,11 @@ ZADNJIH 5'}
     \item prostorska zahtevnost je $O(1)$
     \item v praksi hitreje, lokalna uporaba medpomnilnika
 \end{itemize}
-
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=75mm]{slike/hitro_urejanje.png}
+    \label{fig:hitro urejanje}
+\end{figure}
 \noindent Obstajajo tudi algoritmi, ki ne delujejo s primerjanjem elementov. \\
 
 \noindent\underline{urejanje s preštevanjem} \\
@@ -429,6 +460,22 @@ kolikor je števec tega elementa. \\
 \noindent Elemente uredimo po števkah od zadnje proti prvi. Časovna
 zahtevnost je $n \cdot \text{število števk}$.
 \subsection{Fisher - Yatesov algoritem}
+Fisher - Yatesov algoritem generira naključno permutacijo na 
+končnem seznamu, tabeli, itd. Z njim v bistvu premešamo elemente. \\
+
+\noindent Deluje tako, da začnemo na koncu (torej na $n$ - tem mestu) in si
+naključno izberemo indeks $k_{0}$, ki je nekje med $0$ in $n - 1$.
+Zamenjamo elementa na $k_{0}$ - tem in $n$ - tem mestu. Postopek ponovimo
+tako, da določimo element na $n - 1$. mestu in si naključno izberemo
+indeks $k_{1}$, ki je nekje med $0$ in $n - 2$. Postopek ponavljamo,
+dokler ne pridemo do konca. Na čisto zadnjem koraku imamo tako določen
+indeks $1$ in element s tem indeksom zamenjamo s tistim na začetnem mestu, 
+saj druge izbire nimamo. \footnote{PREMISLI, ČE ŽELIŠ NAŠTETI
+ŠE DRUGE METODE.} \\
+
+\noindent Časovna zahtevnost Fisher - Yatesovega algoritma je 
+$O(n)$, saj je $n - 1$ korakov in na vsakem samo zamenjamo člena.
+
 \subsection{Algoritmi za urejanje}
 \underline{urejanje z mehurčki} \footnote{intuicija - mehurčki v vodi plavajo navzgor, prav tako
 gredo večji elementi proti vrhu seznama} \\
@@ -464,5 +511,7 @@ vsakega primerjal z vsakim. Na večjih seznamih zato navadno začnemo
 z zahtevnejšimi seznami, nato pa za majhne sezname uporabimo enega 
 izmed zgornjih algoritmov.
 \subsection{Časovna zahtevnost hitrega urejanja}
+Obravnava je že zgoraj v podpoglavju \textit{Metoda deli in 
+vladaj}. \footnote{PREMISLI, ČE JO RES DOBRO RAZUMEŠ.}
 \subsection{Dinamično programiranje in memoizacija}
 \end{document}
