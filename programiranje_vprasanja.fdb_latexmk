@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1584543546 "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.tex" "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf" "programiranje_vprasanja" 1584543547
-  "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.aux" 1584543547 3401 7415873c407d4fb3e4c47c2882bb3ea8 ""
-  "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.tex" 1584543544 23207 35bc1f31f0fd71a6477b52f184ebd3d4 ""
+["pdflatex"] 1584544216 "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.tex" "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf" "programiranje_vprasanja" 1584544216
+  "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.aux" 1584544216 3401 c3ba40adca26c982b3a28ce36035459e ""
+  "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.tex" 1584544213 23290 355d4d6488f9c776317ad4881f124eea ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1572595918 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1572595918 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -64,9 +64,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1572595918 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1584380147 334148 1b9d30ff8c861d6082e3e9bfccd8d7eb ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1584380140 8044939 86768d064ab0abaed0b52e70cfdf05f5 ""
-  "programiranje_vprasanja.aux" 1584543547 3401 7415873c407d4fb3e4c47c2882bb3ea8 "pdflatex"
-  "programiranje_vprasanja.tex" 1584543544 23207 35bc1f31f0fd71a6477b52f184ebd3d4 ""
-  "programiranje_vprasanja.toc" 1584543547 1879 7ce285e428b64a03612c772d944111e5 "pdflatex"
+  "programiranje_vprasanja.aux" 1584544216 3401 c3ba40adca26c982b3a28ce36035459e "pdflatex"
+  "programiranje_vprasanja.tex" 1584544213 23290 355d4d6488f9c776317ad4881f124eea ""
+  "programiranje_vprasanja.toc" 1584544216 1879 1c10f14efe3b1cee8d42302abd792e05 "pdflatex"
   "slike/anonimna_funkcija.png" 1584390988 24813 8e082f316185e27044ea7e993e3ca81b ""
   "slike/curryiranje.png" 1584455935 41305 412cfefebdd182e99809355769d179e1 ""
   "slike/curryiranje_tipi.png" 1584455646 41723 4f798e23c20fe9ec8482950fcd9b4534 ""
@@ -83,9 +83,9 @@
   "slike/tabele.png" 1584540681 25270 a6903e91715f610f1d9f36d892a3dcca ""
   "slike/urejanje_z_zlivanjem.png" 1584527460 100005 eccbeda4c381d02d9d80e92bc76f5324 ""
   (generated)
-  "programiranje_vprasanja.toc"
-  "programiranje_vprasanja.log"
   "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.pdf"
-  "programiranje_vprasanja.pdf"
-  "programiranje_vprasanja.aux"
+  "programiranje_vprasanja.log"
+  "programiranje_vprasanja.toc"
   "/home/nace/Documents/git/programiranje1-ustni/programiranje_vprasanja.log"
+  "programiranje_vprasanja.aux"
+  "programiranje_vprasanja.pdf"

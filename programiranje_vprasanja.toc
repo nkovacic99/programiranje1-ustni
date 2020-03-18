@@ -5,10 +5,10 @@
 \contentsline {subsection}{\numberline {1.4}Parametrični tipi in polimorfne funkcije}{2}% 
 \contentsline {subsection}{\numberline {1.5}Funkcije višjega reda in anonimne funkcije}{2}% 
 \contentsline {subsection}{\numberline {1.6}Delno uporabljene funkcije in curryiranje}{3}% 
-\contentsline {subsection}{\numberline {1.7}Vsote in induktivni tipi}{4}% 
-\contentsline {subsection}{\numberline {1.8}Različice funkcije \textit {fold}}{4}% 
-\contentsline {subsection}{\numberline {1.9}Dokazovanje z indukcijo na seznamih in drevesih}{5}% 
-\contentsline {subsection}{\numberline {1.10}Signature in moduli}{6}% 
+\contentsline {subsection}{\numberline {1.7}Vsote in induktivni tipi}{3}% 
+\contentsline {subsection}{\numberline {1.8}Različice funkcije \textit {fold}}{3}% 
+\contentsline {subsection}{\numberline {1.9}Dokazovanje z indukcijo na seznamih in drevesih}{4}% 
+\contentsline {subsection}{\numberline {1.10}Signature in moduli}{5}% 
 \contentsline {section}{\numberline {2}Iztočnice za podatkovne strukture in algoritme}{7}% 
 \contentsline {subsection}{\numberline {2.1}Računska zahtevnost}{7}% 
 \contentsline {subsection}{\numberline {2.2}Iskalna drevesa in AVL drevesa}{8}% 

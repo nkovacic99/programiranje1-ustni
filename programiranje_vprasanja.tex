@@ -116,7 +116,6 @@ primer:
     \includegraphics[width=100mm]{slike/curryiranje_tipi.png}
     \label{fig:curryiranje_tipi}
 \end{figure}
-\newpage
 Tipa $A * B \rightarrow C$ in $A \rightarrow B \rightarrow C$ sta si izomorfna.
 Prvi tip predstavlja \textit{običajno funkcijo dveh argumentov},
 drugi pa \textit{Curryirano funkcijo dveh argumentov}. Izomorfizmu
@@ -201,7 +200,7 @@ predpostavimo, da velja samo za dve \textit{direktno manjši drevesi}.
 Pomembno pri indukciji na drevesih je to, da imamo neko \textit{velikost}, nekaj, 
 s čimer lahko indukcijo na drevesih prevedemo na indukcijo
 na naravnih številih. Dober primer je \textit{globina}. \\
-\newpage
+
 \noindent\underline{Indukcija na poljubnem tipu}
 \begin{figure}[h!]
     \centering
@@ -269,7 +268,7 @@ razpakirati (ločimo na glavo in rep), nato izvedemo funkcijo
 na repu, ki je dolžine $n$. Pri tem porabimo torej $T(n)$ časa.
 Na koncu damo še glavo nazaj, za kar porabimo $O(1)$ časa,
 potem pa še staknemo. Pri stikanju gre za funkcijo na dveh seznamih.
-Časovna zahtevnost je v odvisnoti od levega. \footnote{Dela rekurzivno
+Časovna zahtevnost je v odvisnoti od dolžine levega. \footnote{Dela rekurzivno
 na levem.} \footnote{DODAJ ŠE SKICO IZRAČUNA ČASOVNE ZAHTEVNOSTI STIKANJA}
 \newpage
 \subsection{Iskalna drevesa in AVL drevesa}
@@ -306,14 +305,16 @@ ima dve različici. Več kot dveh ne more imeti, saj AVL drevesa
 tvorimo tako, da jih sproti urejamo, zaradi česar je razlika
 globin obeh otrok ob vsakem trenutku največ $1$. To neuravnoteženost
 lahko popravimo s pravo rotacijo. \footnote{RAZLOŽI, KDAJ UPORABIMO KAKŠNO ROTACIJO + 
-POPRAVI MESTA SLIK}
+POPRAVI MESTA SLIK} \\
 
+\noindent \underline{leva rotacija}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=50mm]{slike/leva_rotacija.png}
     \label{fig:leva rotacija}
 \end{figure}
-
+\newpage
+\underline{desno leva rotacija}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=75mm]{slike/desno_leva_rotacija.png}
@@ -329,6 +330,7 @@ da vsak seznam sestavljata glava in rep.
     \includegraphics[width=75mm]{slike/prikaz_veriznih_seznamov.png}
     \label{fig:prikaz_veriznih}
 \end{figure}
+
 \noindent V vsakem prostoru je napisan en podatek. Vidimo, da je seznam $s$
 shranjen na mestu $19$. V pomnilniku je nato shranjeno tudi, da je to 
 seznam, sestavljen iz glave in repa. Na naslednjih dveh mestih 
@@ -355,6 +357,7 @@ dodati temu seznamu, nato pa cel seznam preslikamo na teh $n$ mest.
     \includegraphics[width=75mm]{slike/pomnilnik_nov_seznam.png}
     \label{fig:pomnilnik nov seznam}
 \end{figure}
+
 \subsection{Razlika med verižnimi seznami in tabelami}
 Verižni seznami so opisani že v zgornjem subsectionu. \\
 
@@ -372,12 +375,14 @@ tabelo ali pa obstoječo spremenijo na mestu.\\
     \label{fig:tabele}
 \end{figure}
 
-\noindent V Pythonu so seznami predstavljeni tako:
+\noindent V Pythonu so seznami predstavljeni tako: \\
+
 \begin{figure}[h!]
     \centering
     \includegraphics[width=75mm]{slike/Python_list.png}
     \label{fig:Python list}
 \end{figure}
+
 \subsection{Metoda deli in vladaj}
 Filozofija metode deli in vladaj je v tem, da problem razbijemo
 na manjši problem. Izvedemo jo v treh korakih
@@ -414,7 +419,8 @@ To bo ravno pri logaritmu. Dobimo
     \item najslabša časovna zahtevnost je $O(n \log n)$
     \item prostorska zahtevnost je $O(n)$
 \end{itemize}
-\begin{figure}[h]
+
+\begin{figure}[h!]
     \centering
     \includegraphics[width=75mm]{slike/urejanje_z_zlivanjem.png}
     \label{fig:urejanje z zlivanjem}
@@ -445,7 +451,9 @@ ZADNJIH 5'}
     \centering
     \includegraphics[width=75mm]{slike/hitro_urejanje.png}
     \label{fig:hitro urejanje}
-\end{figure}
+\end{figure} 
+
+
 \noindent Obstajajo tudi algoritmi, ki ne delujejo s primerjanjem elementov. \\
 
 \noindent\underline{urejanje s preštevanjem} \\
