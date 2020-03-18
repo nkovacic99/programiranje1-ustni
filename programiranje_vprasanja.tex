@@ -365,7 +365,69 @@ na manjši problem. Izvedemo jo v treh korakih
     \item podnaloge rekurzivno rešimo
     \item dobljene rešitve združimo v rešitev prvotne naloge
 \end{itemize}
+\underline{urejanje z zlivanjem} \\
 
+\noindent Seznam damo na polovico in vsakega od njiju rekurzivno uredimo.
+Dobimo dva urejena seznama, kjer vsak vsebuje polovico
+prvotnega seznama. Nato gledamo glavi obeh urejenih seznamov in 
+vsakič izberemo manjšega. Časovna zahtevnost tega algoritma je $n \cdot \log n$.
+Vsakič razpolovimo in to razpolavljamo $\log n $ - krat. V vsakem
+nivoju moramo razdeliti seznam na dva dela, kar je linearno. Ko
+pridemo do seznamov dolžine $1$, jih uredimo v konstantnem času. Teh seznamov
+je $n$, zato porabimo spet linearno časa. Dva seznama lahko zlijemo
+skupaj $n$ - krat, torej je časovna zahtevnost $n$.
+\begin{align*}
+T(n) &= O(n) + 2 T(\frac{n}{2}) \\
+&= O(n) + 2 (O(\frac{n}{2}) + 4 T(\frac{n}{4})) \\
+&= \cdots \\
+&= k O(n) + 2^{k} T(\frac{n}{2^{k}})
+\end{align*}
+Ta $k$ lahko povečujemo toliko časa, dokler ni $2^{k} \geq n$. 
+To bo ravno pri logaritmu. Dobimo
+\begin{align*}
+&= \lceil \log_{2}n O(n) \rceil + 2^{\lceil \log_{2}n \rceil} O(1) \\
+&= O(n \log n)
+\end{align*}
+\begin{itemize}
+    \item povprečna časovna zahtevnost je $O(n \log n)$
+    \item najslabša časovna zahtevnost je $O(n \log n)$
+    \item prostorska zahtevnost je $O(n)$
+\end{itemize}
+\underline{hitro urejanje} \\
+
+\noindent Ideja je, da se potrudimo, kako seznam razdelimo, 
+vsak podseznam rekurzivno uredimo in ju neumno damo skupaj. Izberemo si \textit{pivot} točko in
+vse elemente v seznamu uredimo glede na to točko, tako, da 
+damo manjše v en seznam, večje pa od drugega. Pivot moramo izbrati
+pametno. \footnote{Če je seznam urejen in izberemo prvi pivot, je ta algoritem precej
+neučinkovit.} Najbolje je, da si izberemo tri pivot točke (začetek, 
+sredina, konec) in za pivot točko izberemo sredinsko vrednost. 
+Lahko tudi seznam razdelimo na dva dela (manjši, večji) 
+in gledamo po elementih teh seznamov. Ko pridemo do 
+elementa v levem delu, ki je večji od pivota in elementa v
+desnem, ki je manjši ju zamenjamo. Nadaljujemo, 
+dokler ne pridemo do konca. \footnote{POGLEJ SI ŠE DRUG NAČIN; TO JE
+ZADNJIH 5'}
+\begin{itemize}
+    \item povprečna časovna zahtevnost je $O(n \log n)$
+    \item najslabša časovna zahtevnost je $O(n^{2})$
+    \item prostorska zahtevnost je $O(1)$
+    \item v praksi hitreje, lokalna uporaba medpomnilnika
+\end{itemize}
+
+\noindent Obstajajo tudi algoritmi, ki ne delujejo s primerjanjem elementov. \\
+
+\noindent\underline{urejanje s preštevanjem} \\
+
+\noindent Uporabimo ga lahko, kadar vemo, katera števila so v seznamu. Zapeljemo
+se čez seznam in za vsak element povečamo pravi števec. Ko pridemo
+do konca, samo naredimo nov seznam, v katerem je toliko posameznih elementov,
+kolikor je števec tega elementa. \\
+
+\noindent \underline{radix sort} \\
+
+\noindent Elemente uredimo po števkah od zadnje proti prvi. Časovna
+zahtevnost je $n \cdot \text{število števk}$.
 \subsection{Fisher - Yatesov algoritem}
 \subsection{Algoritmi za urejanje}
 \underline{urejanje z mehurčki} \footnote{intuicija - mehurčki v vodi plavajo navzgor, prav tako
